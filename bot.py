@@ -1,7 +1,7 @@
 import discord
 import responces
 
-TOKEN = 'MTE5MTY0NzM2NzMyMjE1MzAwMA.GBks-w.on91B2RCmJbIJm4QojYR9DQT6fKDcv7TGh2jLc'
+TOKEN = '' # insert discord bot token here
 intents = discord.Intents.default()
 intents.message_content = True
 client = discord.Client(intents=intents)
@@ -21,8 +21,8 @@ def run_discord_bot():
     @client.event
     async def on_ready():
         print(f'We have logged in as {client.user}'.format())
-        channelID = 929288419908153394
-        user_id = 342830408800534529  # Replace with the actual User ID of Izokia
+        channelID = 9999999999 # replace with actual channel id (discord)
+        user_id = 34299999999999  # Replace with the actual User ID (in discord)
         msg = f'<@{user_id}> Check the stream you got a shiny!'  # Mention the user by their ID
         await send_message(channelID, msg)
 
